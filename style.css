@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Header section */
+
+header{
+    display: flex;
+    height: 120px;
+}
+.Banner{
+    flex: 3;
+    background: #0081a7;
+}
+.Banner p{
+    font-size: 90%;
+}
+.Banner_wrapper{
+    margin-top: 20px;
+    margin-left: 4%; 
+    color: white;
+}
+.Contact{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background: #00AFB9;
+}
+.Contact a{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px;
+}
+.Contact img{
+}
+
+
+
+/* Menu section */
+
+nav{
+    background: #0b3c5d;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding: 0;  
+    text-align: center;
+}
+li{
+    flex-grow: 1;
+    line-height: 2.5em;
+    border-right: 1px solid #006481;
+}
+li:last-child{
+    border-right: 0;
+}
+li a{
+    display: block;
+}
+li a:hover{
+    background: rgb(255, 255, 255,.1)
+}
+
+
+
+/* gallery section */
+
+main{
+    display: flex;
+    background: #efefef;
+}
+.gallery{
+    margin: 8%;
+    border: 5px solid #dedede;
+    background: white;    
+}
+.gallery_wrapper{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 100%;
+    padding: 5px 0;
+}
+.coloum{
+    padding: 0 5px;
+    display: flex;
+    flex: 15%;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+@media(max-width: 1024px){
+    .coloum{
+        flex:30%
+    }    
+}
+@media(max-width: 600px){
+    .coloum{
+        flex:100%
+    }
+    .Banner h2{
+        font-size: 19px;
+        padding-bottom: 2px;
+    }
+    .Banner p{
+        font-size: 80%;
+    }
+}
+
+
+/* Footer section */
+
+footer{
+    display: flex;
+    background: #0b3c5d;
+    height: 70px;
+}
+footer p{
+    margin: auto;
+    color: white;
+}
